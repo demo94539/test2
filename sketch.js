@@ -7,14 +7,15 @@
   var particles = [];
   var particle;
   var plinkos = [];
+
   var divisionHeight = 300;
   var score = 0;
-  var count = 5;
-  var gameState = "end";
+  var count = 0;
+  var gameState = "start";
 
   function setup() {
 
-  createCanvas(800, 700);
+  createCanvas(800, 800);
  
   engine = Engine.create();
   world = engine.world;
@@ -172,7 +173,8 @@ if(particle != null){
     }
  }
 
- function mousePressed(){
+ function mousePressed()
+{
 
  if(gameState !== "end"){
 
